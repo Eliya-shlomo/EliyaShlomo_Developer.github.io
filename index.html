@@ -24,8 +24,8 @@
 						<p>More than 200k lines of code <a href="http://www.github.com/Eliya-shlomo">@github</a><br />
 							My Linkdin profile  <a href="http://www.linkedin.com/in/eliya-shlomo">@Linkdin</a><br />
 							Software Engineer |Computer Science junior (B.Sc) |Crafting Code with Innovation and Precision
-							<br /><h2>Open To Work</h2>
-							</p>
+							<br /><h2>Open To Work</h2> 	
+						</p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -72,7 +72,7 @@
 										<h2><a href="#">Search Engine <br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="https://github.com/Eliya-shlomo/SearchEngine" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p>
 										Developed a search engine that crawls all pages of a website using the BFS algorithm. Utilized Redis for address storage and leveraged Kafka and Elasticsearch to enhance task segmentation and search efficiency.</p>
 										<br />
@@ -85,7 +85,7 @@
 										<span class="date">December 15, 2024</span>
 										<h2><a href="#">Chat Bot<br /></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+									<a href="https://github.com/Eliya-shlomo/my-Chat-bot" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
 									<p>Created a chatbot that provides weekly weather forecasts in Israel based on user-selected region and city. Implemented using HTML and JSON scraping, Dialogflow, and Webhooks for seamless interaction and data retrieval.</p>
 									<a href="https://github.com/Eliya-shlomo/my-Chat-bot">@My-Chat-Bot</a>
 									<ul class="actions special">
@@ -96,7 +96,7 @@
 										<span class="date">january 18, 2024</span>
 										<h2><a href="#">Basic Spring</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+									<a href="https://github.com/Eliya-shlomo/basicSpring" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
 									<p>Developed a Spring Boot project leveraging JIRA for project management and issue tracking. Utilized Swagger for API documentation and interactive exploration, and Postman for thorough API testing and validation. The project ensured efficient development and collaboration through these integrated tools.</p>
 									<a href="https://github.com/Eliya-shlomo/basicSpring">@BasicSpring</a>
 									<ul class="actions special">
@@ -107,7 +107,7 @@
 										<span class="date">february 07,2024</span>
 										<h2><a href="#">Uber Drive Decentralized</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+									<a href="https://github.com/Eliya-shlomo/Uber_Drive_Decentralized" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
 									<p>Developed a decentralized ride-sharing app using Hardhat for smart contract deployment and testing, and Next.js for the front-end. Integrated smart contracts manage ride bookings, payments, and driver-rider interactions seamlessly.</p>
 									<br />
 										<a href="https://github.com/Eliya-shlomo/Uber_Drive_Decentralized">@Uber Drive Decentralized</a>
@@ -119,7 +119,7 @@
 										<span class="date">March 11, 2024</span>
 										<h2><a href="#">My NFT <br /></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+									<a href="https://github.com/Eliya-shlomo/My_NFT_Ai" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
 									<p>Developed a project using Hardhat for deploying NFT smart contracts based on the ERC standards. Integrated an AI API to generate images, which are then minted on the blockchain.</p>
 									<br />
 									<br />
@@ -133,7 +133,7 @@
 										<span class="date">April 7, 2023</span>
 										<h2><a href="#">My Observer</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+									<a href="https://github.com/Eliya-shlomo/-Design-Pattern---Observer" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
 									<p>Developed a system using the Observer design pattern to allow real-time updates to a group of recipients about changes in UndoableStringBuilder. Implemented GroupAdmin as the observable, managing a list of ConcreteMember observers, who receive updates. Also added tracking of the heap object's size for efficient memory management.</p>
 									<a href="https://github.com/Eliya-shlomo/-Design-Pattern---Observer">@Observer Design Project</a>
 									<ul class="actions special">
@@ -153,27 +153,30 @@
 
 				<!-- Footer -->
 					<footer id="footer">
+						<!-- Contact Form -->
 						<section>
-							<form method="post" action="#">
+							<h2>Contact Me</h2>
+							<form id="contact-form" method="post" action="send_email.php">
 								<div class="fields">
 									<div class="field">
 										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
+										<input type="text" id="name" name="name" required>
 									</div>
 									<div class="field">
 										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
+										<input type="email" id="email" name="email" required>
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
+										<textarea id="message" name="message" rows="4" required></textarea>
 									</div>
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+									<li><input type="submit" value="Send Message" class="button primary"></li>
 								</ul>
 							</form>
 						</section>
+
 						<section class="split contact">
 							<section>
 								<h3>Phone</h3>
