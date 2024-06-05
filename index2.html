@@ -23,9 +23,7 @@
 						Software Developer</h1>
 						<p>More than 200k lines of code <a href="http://www.github.com/Eliya-shlomo">@github</a><br />
 							My Linkdin profile  <a href="http://www.linkedin.com/in/eliya-shlomo">@Linkdin</a><br />
-							Software Engineer |Computer Science junior (B.Sc) |Crafting Code with Innovation and Precision
-							<br /><h2>Open To Work</h2> 
-						</p>
+							Software Engineer |Computer Science junior (B.Sc) |Crafting Code with Innovation and Precision</p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -73,7 +71,7 @@
 										<h2><a href="#">Barber Room <br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic11.jpg" alt="" /></a>
+									<a href="https://github.com/Eliya-shlomo/BarberRoom" class="image fit"><img src="images/pic11.jpg" alt="" /></a>
 									<p>
 										BarbeRoom is a Next.js web application that streamlines appointment scheduling for barbers and clients. Clients can book, view, and cancel appointments, while barbers manage their shifts and schedules. The platform enhances organization and communication within the barbering community.
                                     </p>
@@ -87,7 +85,7 @@
 										<span class="date">March 20, 2024</span>
 										<h2><a href="#">Tiny URL<br /></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic12.jpg" alt="" /></a>
+									<a href="https://github.com/Eliya-shlomo/My_tiny_URL" class="image fit"><img src="images/pic12.jpg" alt="" /></a>
 									<p>Created a URL shortening service with Spring Boot, offering tracking and analytics features. Used Docker for deployment and Cassandra for data management. The project includes API documentation via Swagger for straightforward integration and use.</p>
                                     <br />
                                     <br />
@@ -100,7 +98,7 @@
 										<span class="date">May 8, 2024</span>
 										<h2><a href="#">Block Explorer<br /></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic13.jpg" alt="" /></a>
+									<a href="https://github.com/Eliya-shlomo/Block_Explorer-/tree/main" class="image fit"><img src="images/pic13.jpg" alt="" /></a>
 									<p>Developed an Ethereum Block Explorer using React and the AlchemySDK to query blockchain data. The application retrieves and displays current block details, including transactions, and provides clickable links for more in-depth information on blocks and transactions. Additional features include account balance lookups and advanced API integrations for NFTs and transaction tracking.</p>
                                     <br />
                                     <br />
@@ -113,7 +111,7 @@
 										<span class="date">May 5, 2024</span>
 										<h2><a href="#">Calculation On Blockchain <br /></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic14.jpg" alt="" /></a>
+									<a href="https://github.com/Eliya-shlomo/Block_Explorer-/tree/main" class="image fit"><img src="images/pic14.jpg" alt="" /></a>
 									<p>Developed and deployed five Solidity smart contracts (Game1 to Game5) on a local Hardhat blockchain. Utilized scripts to deploy contracts and emit the "Winner" event by interacting with them. The project involves modifying deployment and interaction scripts, troubleshooting, and using Hardhat's console for debugging.</p>
                                     <br />
                                     <br />
@@ -136,27 +134,30 @@
 
 				<!-- Footer -->
 					<footer id="footer">
+						<!-- Contact Form -->
 						<section>
-							<form method="post" action="#">
+							<h2>Contact Me</h2>
+							<form id="contact-form" method="post" action="send_email.php">
 								<div class="fields">
 									<div class="field">
 										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
+										<input type="text" id="name" name="name" required>
 									</div>
 									<div class="field">
 										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
+										<input type="email" id="email" name="email" required>
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
+										<textarea id="message" name="message" rows="4" required></textarea>
 									</div>
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+									<li><input type="submit" value="Send Message" class="button primary"></li>
 								</ul>
 							</form>
 						</section>
+
 						<section class="split contact">
 							<section>
 								<h3>Phone</h3>
