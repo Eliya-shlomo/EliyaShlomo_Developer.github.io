@@ -151,6 +151,39 @@
 
 					</div>
 
+					<footer>
+						<div class="pagination">
+							<!-- Remove the link to "Next Projects" page -->
+							<button id="load-more-projects">Load More Projects</button>
+						</div>
+					</footer>
+					
+					<script>
+						// Add an event listener to the "Load More Projects" button
+						document.getElementById('load-more-projects').addEventListener('click', function() {
+							// Fetch more projects from index2.html
+							fetch('index2.html')
+								.then(response => response.text()) // Convert response to text
+								.then(html => {
+									// Create a temporary container to hold the new projects
+									const tempContainer = document.createElement('div');
+									tempContainer.innerHTML = html;
+					
+									// Select the section containing the additional projects
+									const additionalProjectsSection = tempContainer.querySelector('.posts');
+					
+									// Append the additional projects to the existing list of projects
+									document.querySelector('.posts').appendChild(additionalProjectsSection);
+					
+									// Remove the "Load More Projects" button if there are no more projects to load
+									if (!tempContainer.querySelector('.pagination')) {
+										document.getElementById('load-more-projects').style.display = 'none';
+									}
+								})
+								.catch(error => console.error('Error loading more projects:', error));
+						});
+					</script>
+
 				<!-- Footer -->
 					<footer id="footer">
 						<!-- Contact Form -->
